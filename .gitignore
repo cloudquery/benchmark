@@ -1,0 +1,7 @@
+.cq/
+benchmark_results/
+cloudquery.log
+
+*.pem
+
+.DS_Store

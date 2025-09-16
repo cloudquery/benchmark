@@ -1,0 +1,10 @@
+kind: destination
+spec:
+  name: "file"
+  path: "cloudquery/file"
+  version: "v5.4.25" # latest version of file destination plugin
+  write_mode: "append"
+  spec:
+    path: "${BENCHMARK_OUTPUT_DIR}/{{TABLE}}.{{FORMAT}}"
+    format: "parquet"
+    no_rotate: true

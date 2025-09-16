@@ -1,0 +1,11 @@
+kind: source
+spec:
+  name: file
+  path: cloudquery/file
+  registry: cloudquery
+  version: "v1.6.27"
+  tables: ["*"]
+  destinations: ${DESTINATIONS}
+  spec:
+    files_dir: "${BENCHMARK_RESULTS}"
+    concurrency: 500

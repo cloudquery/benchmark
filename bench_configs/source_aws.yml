@@ -1,0 +1,36 @@
+kind: source
+spec:
+  name: aws
+  path: cloudquery/aws
+  version: "v32.42.0" # latest version of source aws plugin
+  destinations: ${DESTINATIONS}
+  skip_dependent_tables: true
+  tables:
+    - aws_acm_certificates
+    - aws_athena_work_groups
+    - aws_config_configuration_recorders
+    - aws_docdb_certificates
+    - aws_dynamodb_tables
+    - aws_ec2_ebs_snapshots
+    - aws_ec2_ebs_volumes
+    - aws_ec2_instance_types
+    - aws_ec2_instances
+    - aws_ec2_network_interfaces
+    - aws_ec2_route_tables
+    - aws_ec2_security_groups
+    - aws_ec2_subnets
+    - aws_ec2_vpc_endpoint_services
+    - aws_ec2_vpcs
+    - aws_elasticache_engine_versions
+    - aws_elasticache_parameter_groups
+    - aws_elasticache_service_updates
+    - aws_elbv2_load_balancers
+    - aws_guardduty_detector_findings
+    - aws_rds_certificates
+    - aws_rds_instances
+    - aws_regions
+    - aws_s3_buckets
+  spec:
+    regions: ["us-east-1"]
+    accounts:
+      - local_profile: ${AWS_LOCAL_PROFILE}

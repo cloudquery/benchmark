@@ -1,0 +1,15 @@
+kind: destination
+spec:
+  name: "s3"
+  path: "cloudquery/s3"
+  registry: "cloudquery"
+  version: "v7.9.7"
+  write_mode: "append"
+  spec:
+    bucket: "${S3_BUCKET_NAME}"
+    region: "${S3_REGION}"
+    path: "${BENCHMARK_OUTPUT_DIR}/{{TABLE}}/{{UUID}}.{{FORMAT}}"
+    format: "parquet"
+    test_write: false
+    credentials:
+      local_profile: "${S3_LOCAL_PROFILE}"
