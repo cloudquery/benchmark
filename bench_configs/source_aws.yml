@@ -30,6 +30,7 @@ spec:
     - aws_rds_instances
     - aws_regions
     - aws_s3_buckets
+    - aws_servicequotas_quota_utilizations
   spec:
     regions: ["us-east-1"]
     accounts:

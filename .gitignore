@@ -1,6 +1,7 @@
 .cq/
 benchmark_results/
 cloudquery.log
+.idea
 
 *.pem
 
