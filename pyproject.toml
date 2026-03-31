@@ -1,0 +1,20 @@
+[project]
+name = "benchmark"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "colorlog>=6.9.0",
+    "fastparquet>=2024.11.0",
+    "pandas>=2.3.2",
+    "pyarrow>=21.0.0",
+    "python-snappy>=0.7.3",
+    "psutil>=7.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "black>=24.3.0",
+]
+
+[tool.uv]
+exclude-newer = "1 week"
