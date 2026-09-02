@@ -2,7 +2,7 @@ kind: source
 spec:
   name: aws
   path: cloudquery/aws
-  version: "v34.5.1" # latest version of source aws plugin
+  version: "v34.6.0" # latest version of source aws plugin
   destinations: ${DESTINATIONS}
   skip_dependent_tables: true
   tables:
